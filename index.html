@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Кішай Максим</title>
+        <link rel="stylesheet" href="./style.css">
+
+        <script type="text/javascript" src="./jquery.js"> </script>
+        <script type="text/javascript" src="./jquery-ui/jquery-ui.js"> </script>
+
+        <link rel="stylesheet" href="./owlcarousel/docs/assets/owlcarousel/assets/owl.carousel.css">
+        <link rel="stylesheet" href="./owlcarousel/docs/assets/owlcarousel/assets/owl.theme.default.css">
+        <script src="./owlcarousel/src/js/owl.carousel.js"> </script>
+
+        <link rel="stylesheet" href="./jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="./jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="./jquery-ui/jquery-ui.theme.css">
+    </head>
+
+    <body>
+        <div class="owl-carousel owl-theme" id="myDiv">
+            <div><img src="./img/3.png"></div>   
+            <div><img src="./img/4.png"></div>
+        </div>
+
+        <div id="Progress"></div>
+    </body>
+    <script>
+
+        $(document).ready(function(){
+    
+            $('.owl-carousel').owlCarousel();
+    
+        });
+
+        $("#myDiv").datepicker();
+
+        $("#Progress").progressbar({
+            value: 50
+        });
+    </script>
+</html> 
